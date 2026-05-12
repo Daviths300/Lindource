@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QHANDS-01 | INH SQA Lab</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #161b22;
+            border-bottom: 1px solid #30363d;
+            padding: 16px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            color: #58a6ff;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        header span {
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 32px 40px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #f0f6fc;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: #8b949e;
+            font-size: 1.1rem;
+        }
+
+        .modules {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 32px;
+        }
+
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 28px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #c9d1d9;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .card:hover {
+            border-color: #58a6ff;
+            transform: translateY(-4px);
+        }
+
+        .card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #f0f6fc;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px;
+            color: #8b949e;
+            font-size: 0.85rem;
+            border-top: 1px solid #30363d;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>⚡ QHANDS-01</h1>
+    <span>INH SQA Lab — Quality Hands</span>
+</header>
+
+<div class="hero">
+    <h2>Welcome to QHANDS-01</h2>
+    <p>Personal SQA Practice Platform — spreading knowledge, one test case at a time.</p>
+</div>
+
+<div class="modules">
+    <a href="/notes" class="card">
+        <div class="icon">📝</div>
+        <h3>Notes</h3>
+        <p>Study notes organized by topic</p>
+    </a>
+
+    <a href="/testcases" class="card">
+        <div class="icon">🧪</div>
+        <h3>Test Cases</h3>
+        <p>Write and store test cases</p>
+    </a>
+
+    <a href="/interviews" class="card">
+        <div class="icon">💼</div>
+        <h3>Mock Interviews</h3>
+        <p>Practice technical interviews</p>
+    </a>
+
+    <a href="/selenium" class="card">
+        <div class="icon">🤖</div>
+        <h3>Selenium Playground</h3>
+        <p>Practice automation testing</p>
+    </a>
+</div>
+
+<footer>
+    <p>QHANDS-01 © 2026 — Named in tribute to Lida, my QA lecturer 🎓</p>
+</footer>
+
+</body>
+</html>
