@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="QHANDS-01 Test Suite" verbose="1">
+
+    <test name="SauceDemo Login Tests">
+        <classes>
+            <class name="io.qhands.lindource.SauceDemoLoginTest">
+                <methods>
+                    <include name="testValidLogin"/>
+                    <include name="testInvalidLogin"/>
+                    <include name="testProductPageLoads"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
