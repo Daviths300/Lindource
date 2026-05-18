@@ -1,5 +1,6 @@
 package io.qhands.lindource;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -16,9 +17,9 @@ import java.util.HashMap;
 public class SauceDemoLoginTest {
 
     private WebDriver driver;
-
-    private static final String LT_USERNAME = "gvasaliadavit3";
-    private static final String LT_ACCESS_KEY = "LT_ovoizF7Dufkr9x0ibhLbc4ZWOKe8sELDEqO44LFhXDdFuCW";
+    private static final Dotenv dotenv = Dotenv.load();
+    private static final String LT_USERNAME = dotenv.get("LT_USERNAME");
+    private static final String LT_ACCESS_KEY = dotenv.get("LT_ACCESS_KEY");
     private static final String GRID_URL = "@hub.lambdatest.com/wd/hub";
 
     @BeforeMethod
